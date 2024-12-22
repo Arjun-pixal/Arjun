@@ -1,0 +1,402 @@
+
+        .nav-item {
+            margin-bottom: 10px;
+            border-radius: 20px;
+            background-color: transparent;
+        }
+
+        .navbar-scrolled {
+            background-color: rgba(0, 0, 0, 0.7) !important;
+            /* Adjust the transparency as needed */
+            transition: background-color 0.3s ease;
+        }
+
+
+        body {
+            /* color: white; */
+            margin: 0;
+            padding: 0;
+            /* font-family: poppins,googlefont; */
+            
+            overflow-x: hidden;
+        }
+
+        .background-container {
+            position: relative;
+            background-image: url('https://img.freepik.com/premium-photo/stylish-business-event-panel-discussion-stage-audience-dark-background_860462-4397.jpg?size=626&ext=jpg&ga=GA1.1.583643007.1726475750&semt=ais_hybrid');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            z-index: 2;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-brand img {
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-item a {
+            color: white;
+        }
+
+        .navbar-nav .nav-item a:hover {
+            color: white;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+
+        h6,
+        h1,
+        p {
+            margin: 5px 0;
+        }
+
+        h1 {
+            font-size: 5.9vw;
+            font-weight: bold;
+        }
+
+        h6 {
+            font-size: 2vw;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 8vw;
+            }
+
+            h6 {
+                font-size: 3.5vw;
+            }
+
+            p {
+                font-size: 3.5vw;
+            }
+        }
+
+        i.fa-calendar,
+        i.fa-map {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 991px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .navbar-nav .nav-item {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        /* Additional styles for the content below the hero section */
+        .row2 {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .row2 .col-lg-7,
+        .row2 .col-md-8,
+        .row2 .col-sm-12 {
+            padding: 15px;
+        }
+
+        .row2 .col-5 img,
+        .row2 .col-lg-7 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .row2 .col-lg-5 {
+            background-color: black;
+            color: #8ab92d;
+            padding: 20px;
+        }
+
+        .row2 .col-lg-5 h3,
+        .row2 .col-lg-5 p {
+            color: #8ab92d;
+        }
+
+        .row2 .col-lg-5 p {
+            color: #fff;
+        }
+
+        .row2 .col-lg-7,
+        .row2 .col-md-8,
+        .row2 .col-sm-12 h2 {
+            color: black;
+        }
+
+        .row2 .col-lg-7,
+        .row2 .col-md-8,
+        .row2 .col-sm-12 h4 {
+            color: black;
+        }
+
+        .carousel-item {
+            padding: 15px;
+        }
+
+        .carousel-item .card {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            /* Aligns the content to the bottom */
+            height: 100%;
+        }
+
+        .carousel-item .card img {
+            width: 50%;
+            object-fit: cover;
+        }
+
+        .carousel-item .card-body {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        /* .table tbody tr:hover {
+            background-color: #8ab92d;
+            color: white; 
+        } */
+        /* example */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+         th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #e9ecef;
+            color: black;
+            font-size: large;
+        } 
+
+        /* tr:nth-child(even) {
+            background-color: #f2f2f2;
+        } */
+
+        tr:hover {
+            background-color: #8ab92d;
+            
+        }
+
+        .dot {
+            height: 10px;
+            width: 50px;
+            margin: 2px;
+            background-color: #8ab92d;
+            /* border-radius: 20px; */
+            display: inline-block;
+        }
+
+        .dot:active {
+            height: 15px;
+            width: 60px;
+            margin: 5px;
+            background-color: #8ab92d;
+        }
+
+        .dot1 {
+            height: 15px;
+            width: 20px;
+            background-color: #e9ecef;
+            display: inline-block;
+        }
+
+        /* .active1 {
+            background-color: black;
+        }  */
+        /* <--carouswe */
+        .carousel-indicators button {
+            width: 10px;
+            height: 30px;
+            /* background-color: gainsboro; */
+
+        }
+
+        .carousel-indicators .active {
+            background-color: #8ab92d;
+        }
+
+        /* design 4 */
+        .pricing-card {
+            background-color: #f8f9fa;
+            border: none;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            background-color: #8ab92d;
+            color: white;
+        }
+
+        .pricing-card h3 {
+            font-size: 2.5rem;
+            color: #8ab92d;
+        }
+
+        .pricing-card.featured h3 {
+            color: white;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pricing-card ul li {
+            padding: 10px 0;
+            /* color: #6c757d; */
+        }
+
+        
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .pricing-card.featured .price {
+            color: white;
+        }
+
+        .buy-btn {
+            margin-top: 20px;
+        }
+
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 200px; Adjust as per your requirement */
+        }
+
+        /* Outer circle */
+        .circle-outer {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgba(138, 185, 45, 0.1); /* Light green background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Inner circle */
+        .circle-inner {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(138, 185, 45, 0.2); /* Darker green background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Centered text */
+        .circle-number {
+            font-size: 32px;
+            color: #333;
+            font-weight: bold;
+        }
+         .circle-number:hover{
+            color: rgb(182, 61, 61);
+        } 
+       .circle-inner:hover{
+        background-color: #9ac540;
+       }
+       .circle-outer:hover{
+        background-color: #c3d997;
+       }
+         .btn1{
+            border-radius: 0%;
+         }
+       
+         .email-input {
+            border-radius: 0%;
+            border-right: none;
+        }
+
+        .email-btn {
+            background-color: #9ac540;
+            border-radius: 0%;
+            /* border: none; */
+        }
+
+        .email-form {
+            max-width: 400px;
+        }
+
+        .btn-custom {
+            background-color: #9ac540;
+            border-radius: 0%;
+        }
+
+        .btn-custom img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* .form-control:focus {
+            box-shadow: none;
+            border-color: #9ac540;
+        } */
+        .email-btn {
+            background-color: #9ac540;
+            /* border-radius: 0 30px 30px 0; */
+            border: none;
+        }
+        table tbody tr:hover {
+            background-color: #8ab92d; /* Change this to any color you prefer */
+        }
