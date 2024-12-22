@@ -1,0 +1,230 @@
+/* style.css */
+body {
+    padding-top: 20px;
+    /* background-color: darkgray; */
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #F5F5F5;
+    }
+
+    25% {
+        background-color: #FFFFFF;
+    }
+
+    50% {
+        background-color: #D0E8F2;
+    }
+    75%{
+        background-color: #D0E8F2;
+    }
+    100%{
+        background-color: #FAF3E0;
+    }
+}
+.navbar {
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: rgb(219, 184, 120);
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 24px;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* style.css */
+/* Adjust the height of the product cards */
+.card {
+    height: auto; /* Automatically adjust height based on content */
+    padding: 10px; /* Reduce padding */
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.card-body {
+    padding: 10px; /* Reduce padding inside the card body */
+}
+
+.card-img-top {
+    height: 120px; /* Decrease the image height */
+    object-fit: cover; /* Ensure the image fits properly inside the specified height */
+}
+
+
+.card-title, .card-text {
+    margin-bottom: 8px; /* Decrease the bottom margin to make it more compact */
+}
+
+.n{
+    font-family:"Edu AU VIC WA NT Guides", cursive;;
+}
+/* hovereffect
+ */
+.card-img-container {
+    overflow: hidden;
+}
+
+.product-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Color change effect on card hover */
+.product-card {
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    background-color: #FFCF88; /* Background color change */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adding shadow */
+}
+
+/* Optional: You can also change the title color on hover */
+.product-card:hover .card-title {
+    color: #FF6347; /* Tomato color for title */
+}
+
+
+/* wishlist  */
+.wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    background-color: transparent;
+    border: none;
+}
+
+.wishlist-icon:hover {
+    cursor: pointer;
+}
+
+/* Make sure the like button itself does not trigger the card hover */
+.product-card:hover .wishlist-icon {
+    background-color: transparent; /* Ensure no hover effect on the wishlist button */
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.products {
+    padding: 2rem;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+
+.cart-item-image {
+    width: 100px; /* adjust the width to your desired size */
+    height: 100px; /* adjust the height to your desired size */
+    object-fit: cover; /* ensure the image is scaled to fit the container */
+    border-radius: 10px; /* add a slight border radius for a nicer look */
+    margin: 10px; /* add some margin around the image */
+  }
+
+
+        /* example2 */
+        .carousel-caption {
+            position: absolute;
+            top: 39%;
+            left: 60%;
+        }
+
+        /* Make buttons more prominent */
+        .carousel-caption .btn {
+            padding: 10px 20px;
+        }
+
+        /* Adjust image height */
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        /* Custom styles for the product cards */
+        .wishlist-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            font-size: 1.5rem;
+        }
+
+        .wishlist-icon i {
+            color: red;
+        }
