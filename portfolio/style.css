@@ -1,0 +1,83 @@
+.skill {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+.experience-item {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.project .card {
+    transition: transform 0.3s;
+}
+
+.project .card:hover {
+    transform: scale(1.05);
+}
+
+#contact-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .skill-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+.gradient-text {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+.font{
+    font-family: "Sofia", sans-serif;
+    font-weight: 744;
+    
+}
+.font1{
+    font-family: "Doto", serif;
+
+}
+.font3{
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.font2{
+    font-family: "Geist Mono", monospace;
+}
